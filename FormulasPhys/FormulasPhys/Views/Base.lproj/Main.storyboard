@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uk7-z5-zcD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Test" modalPresentationStyle="overFullScreen" id="BYZ-38-t0r" customClass="TestViewController" customModule="FormulasPhys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.2706613839" green="0.27438610790000001" blue="0.28235417600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oln-e7-d5a">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="zAW-M8-K4u">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="MtN-Ha-yFc" kind="presentation" identifier="goToPhysSectionsFromTest" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="TA4-F3-D5j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="78"/>
+        </scene>
+        <!--Кинематика-->
+        <scene sceneID="YCR-2F-Iye">
+            <objects>
+                <viewController storyboardIdentifier="FormulasReference" id="O7o-OL-bnZ" customClass="FormulasReferenceViewController" customModule="FormulasPhys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXN-WW-P4o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lHn-l6-rEW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" image="chevron.backward" catalog="system" id="3PV-pO-dRW">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Кинематика" largeTitleDisplayMode="always" id="kte-ns-mye">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="U8b-BU-zbB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="MtN-Ha-yFc" kind="presentation" identifier="goToPhysSectionsFromReference" destinationCreationSelector="unwindSegue:" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Nap-XX-EFX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daz-Ui-Apf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="765"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="0xJ-cG-amS">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="Uk7-z5-zcD" customClass="MainViewController" customModule="FormulasPhys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FPr-Do-TeG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a5N-46-GWa">
+                                <rect key="frame" x="5" y="365.5" width="404" height="175"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkl-yI-xjR">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="80"/>
+                                        <color key="backgroundColor" red="0.18823686240000001" green="0.18823254110000001" blue="0.1882354319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="HMp-YH-sBs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Тест">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="testButtonAction:" destination="Uk7-z5-zcD" eventType="touchUpInside" id="jM2-3F-7aD"/>
+                                            <segue destination="MtN-Ha-yFc" kind="presentation" identifier="Тест" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="wac-K3-xgz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U5-2X-baM">
+                                        <rect key="frame" x="0.0" y="95" width="404" height="80"/>
+                                        <color key="backgroundColor" red="0.18823686240000001" green="0.18823254110000001" blue="0.1882354319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="QYr-41-wqu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Справочник">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ReferenceButtonAction:" destination="Uk7-z5-zcD" eventType="touchUpInside" id="xcI-hc-aYZ"/>
+                                            <segue destination="MtN-Ha-yFc" kind="presentation" identifier="Справочник" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="j1m-od-v3z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DFj-nq-XZi"/>
+                        <color key="backgroundColor" red="0.2706613839" green="0.27438610790000001" blue="0.28235417600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DFj-nq-XZi" firstAttribute="trailing" secondItem="a5N-46-GWa" secondAttribute="trailing" constant="5" id="IVF-kL-s3o"/>
+                            <constraint firstItem="a5N-46-GWa" firstAttribute="leading" secondItem="DFj-nq-XZi" secondAttribute="leading" constant="5" id="jud-Ra-3OU"/>
+                            <constraint firstItem="a5N-46-GWa" firstAttribute="centerY" secondItem="DFj-nq-XZi" secondAttribute="centerY" id="l69-xz-NnE"/>
+                            <constraint firstItem="a5N-46-GWa" firstAttribute="centerX" secondItem="DFj-nq-XZi" secondAttribute="centerX" id="trC-fQ-Irg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qfH-W0-efH"/>
+                    <connections>
+                        <outlet property="referenceeButton" destination="2U5-2X-baM" id="t31-jE-yd3"/>
+                        <outlet property="testButton" destination="Bkl-yI-xjR" id="xcl-9L-bIZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHi-uN-0Gq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-865.21739130434787" y="77.678571428571431"/>
+        </scene>
+        <!--Тест-->
+        <scene sceneID="gzY-oi-wFj">
+            <objects>
+                <viewController storyboardIdentifier="PhysicalSections" id="Ahj-44-0Mn" customClass="SectionsPhysicsViewController" customModule="FormulasPhys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JMy-Nn-9li">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W2G-It-MTJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ovb-g0-05b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W2G-It-MTJ" firstAttribute="top" secondItem="ovb-g0-05b" secondAttribute="top" id="Gfh-t6-vVY"/>
+                            <constraint firstItem="W2G-It-MTJ" firstAttribute="leading" secondItem="ovb-g0-05b" secondAttribute="leading" id="JbG-La-qLI"/>
+                            <constraint firstItem="W2G-It-MTJ" firstAttribute="bottom" secondItem="ovb-g0-05b" secondAttribute="bottom" id="UVm-NJ-DFi"/>
+                            <constraint firstItem="W2G-It-MTJ" firstAttribute="trailing" secondItem="ovb-g0-05b" secondAttribute="trailing" id="YFg-hD-0Vr"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Тест" id="eU4-b4-Wie">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="7ZC-At-vCI">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Uk7-z5-zcD" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Nk0-id-ztG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="W2G-It-MTJ" id="hi1-3w-9YO"/>
+                        <segue destination="031-rA-cYx" kind="presentation" identifier="goToReferenceFormulas" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="UGe-QH-0mh"/>
+                        <segue destination="deX-HR-Kiz" kind="presentation" identifier="goToTestFormulas" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="49n-0A-GHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bby-z0-unm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="835"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="heG-9B-S6s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MtN-Ha-yFc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="j6g-ga-pB9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wvz-Yn-o5G">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ahj-44-0Mn" kind="relationship" relationship="rootViewController" id="u7V-jD-HNt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jl-S8-8dX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-901" y="865"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1lr-Qj-yDe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="deX-HR-Kiz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cma-7m-I69"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2AW-xH-o0N">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="n1f-gO-pu2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPh-CJ-KSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="84"/>
+        </scene>
+        <!--Кинематика-->
+        <scene sceneID="6lO-5A-ux8">
+            <objects>
+                <navigationController title="Кинематика" automaticallyAdjustsScrollViewInsets="NO" id="031-rA-cYx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="EbQ-04-dyB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bxy-JD-fxr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O7o-OL-bnZ" kind="relationship" relationship="rootViewController" id="2Xc-hk-0yW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBu-qt-clj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="765"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="u7V-jD-HNt"/>
+        <segue reference="TA4-F3-D5j"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
